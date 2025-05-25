@@ -1,0 +1,62 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+
+- intent: confirm_name
+  examples: |
+    - Yes, this is [John](name)
+    - Speaking
+    - Yep, [Sarah](name) here
+
+- intent: tell_feeling
+  examples: |
+    - I'm doing well
+    - Not bad, thanks
+    - All good today
+
+- intent: agree_chat
+  examples: |
+    - Sure
+    - Yeah, go ahead
+    - No problem
+
+- intent: confirm_role
+  examples: |
+    - Yes, I handle integration
+    - That's correct
+    - I'm in charge of integration
+
+- intent: provide_industry
+  examples: |
+    - We’re in [finance](industry)
+    - Logistics
+    - [Manufacturing](industry)
+
+- intent: share_integration_issue
+  examples: |
+    - We had scaling issues recently
+    - Version conflicts are annoying
+    - Integration is slow
+
+- intent: agree_session
+  examples: |
+    - Yes, let's do it
+    - Next Tuesday works
+    - Wednesday afternoon sounds good
+
+- intent: deny
+  examples: |
+    - Not interested
+    - No thanks
+    - Maybe later
+
+- intent: provide_setup_info
+  examples: |
+    - We're using custom REST APIs
+    - Boomi mostly
+    - It's built on Zapier

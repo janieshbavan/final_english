@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+- rule: Start greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Confirm name and ask how they are
+  steps:
+    - intent: confirm_name
+    - action: utter_ask_feeling
+
+- rule: Ask for quick chat
+  steps:
+    - intent: tell_feeling
+    - action: utter_intro
+
+- rule: Explain company background
+  steps:
+    - intent: agree_chat
+    - action: utter_explain_company
+    - action: utter_confirm_role
+
+- rule: Ask for industry
+  steps:
+    - intent: confirm_role
+    - action: utter_ask_industry
+
+- rule: Ask integration issues
+  steps:
+    - intent: provide_industry
+    - action: utter_ask_issues
+
+- rule: Offer session
+  steps:
+    - intent: share_integration_issue
+    - action: utter_offer_session
+
+- rule: Ask setup info if they reject session
+  steps:
+    - intent: deny
+    - action: utter_ask_setup
+
+- rule: Confirm booking
+  steps:
+    - intent: agree_session
+    - action: utter_confirm_appointment
+
+- rule: Wrap up
+  steps:
+    - intent: provide_setup_info
+    - action: utter_thank_you

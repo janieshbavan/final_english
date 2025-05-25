@@ -1,0 +1,12 @@
+{
+  "0": "agree_chat",
+  "1": "agree_session",
+  "2": "confirm_name",
+  "3": "confirm_role",
+  "4": "deny",
+  "5": "greet",
+  "6": "provide_industry",
+  "7": "provide_setup_info",
+  "8": "share_integration_issue",
+  "9": "tell_feeling"
+}

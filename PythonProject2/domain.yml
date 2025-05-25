@@ -1,0 +1,82 @@
+version: "3.1"
+
+intents:
+  - greet
+  - confirm_name
+  - tell_feeling
+  - agree_chat
+  - confirm_role
+  - provide_industry
+  - share_integration_issue
+  - agree_session
+  - deny
+  - provide_setup_info
+
+entities:
+  - name
+  - DATE
+  - TIME
+  - EMAIL
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+
+  DATE:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: DATE
+
+  TIME:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: TIME
+
+  EMAIL:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: EMAIL
+
+responses:
+  utter_greet:
+    - text: "Hey {name}, this is Naveen from Tellestia. Is this {name}?"
+
+  utter_ask_feeling:
+    - text: "Ahh!! Great. First of all, how are you {name}? How was your day?"
+
+  utter_intro:
+    - text: "May I kindly take 2 minutes of your time for a quick chat on digital integration?"
+
+  utter_explain_company:
+    - text: "We’re a Canadian tech firm helping simplify backend systems using WSO2.I believe you're the one responsible for digital integration at your company — kindly correct me if I'm wrong"
+
+  utter_confirm_role:
+    - text: "I believe you're the one responsible for digital integration at your company — kindly correct me if I'm wrong?"
+
+  utter_ask_industry:
+    - text: "A lot of teams we speak to are dealing with patchy system connections or stuck with legacy setups. May I kindly have the liberty to know if your company falls under something like finance, logistics, or manufacturing?"
+
+  utter_ask_issues:
+    - text: "That's great, {name}. Have you faced any issues lately with integration—like performance, scaling, or version updates?"
+
+  utter_ask_setup:
+    - text: "Got it. Is your current setup mostly custom builds, REST APIs, or something like Boomi or Zapier?"
+
+  utter_offer_session:
+    - text: "Would it help if I set up a short session with one of our WSO2-certified experts to take a look at your current setup? How does next Tuesday morning or Wednesday afternoon look for you?"
+
+  utter_confirm_appointment:
+    - text: "Awesome! I'll book your session for {DATE} at {TIME}. Can I have your email to send the invite?"
+
+  utter_thank_you:
+    - text: "Thanks again for your time {name}—I’m looking forward to helping your team simplify things and make integration a breeze. Talk soon!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,14 @@
+{
+  "0": "agree_quick_chat",
+  "1": "ask_wellbeing",
+  "2": "confirm_name",
+  "3": "confirm_role",
+  "4": "deny",
+  "5": "deny_role",
+  "6": "give_appointment_details",
+  "7": "greet",
+  "8": "industry_info",
+  "9": "integration_issues",
+  "10": "provide_setup_info",
+  "11": "setup_session"
+}

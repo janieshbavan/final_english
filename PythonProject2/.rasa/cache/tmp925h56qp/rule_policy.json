@@ -1,0 +1,39 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agree_chat\"}}]": "utter_explain_company",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agree_chat\"}}, {\"prev_action\": {\"action_name\": \"utter_explain_company\"}, \"user\": {\"intent\": \"agree_chat\"}}]": "utter_confirm_role",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agree_chat\"}}, {\"prev_action\": {\"action_name\": \"utter_explain_company\"}, \"user\": {\"intent\": \"agree_chat\"}}, {\"prev_action\": {\"action_name\": \"utter_confirm_role\"}, \"user\": {\"intent\": \"agree_chat\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_industry\"}}]": "utter_ask_issues",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_industry\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_issues\"}, \"user\": {\"intent\": \"provide_industry\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_feeling\"}}]": "utter_intro",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tell_feeling\"}}, {\"prev_action\": {\"action_name\": \"utter_intro\"}, \"user\": {\"intent\": \"tell_feeling\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirm_role\"}}]": "utter_ask_industry",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirm_role\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_industry\"}, \"user\": {\"intent\": \"confirm_role\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirm_name\"}}]": "utter_ask_feeling",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"confirm_name\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_feeling\"}, \"user\": {\"intent\": \"confirm_name\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agree_session\"}}]": "utter_confirm_appointment",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agree_session\"}}, {\"prev_action\": {\"action_name\": \"utter_confirm_appointment\"}, \"user\": {\"intent\": \"agree_session\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}]": "utter_ask_setup",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_setup\"}, \"user\": {\"intent\": \"deny\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"share_integration_issue\"}}]": "utter_offer_session",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"share_integration_issue\"}}, {\"prev_action\": {\"action_name\": \"utter_offer_session\"}, \"user\": {\"intent\": \"share_integration_issue\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_setup_info\"}}]": "utter_thank_you",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_setup_info\"}}, {\"prev_action\": {\"action_name\": \"utter_thank_you\"}, \"user\": {\"intent\": \"provide_setup_info\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_setup_info\"}}, {\"prev_action\": {\"action_name\": \"utter_thank_you\"}, \"user\": {\"intent\": \"provide_setup_info\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}, {\"prev_action\": {\"action_name\": \"utter_ask_setup\"}, \"user\": {\"intent\": \"deny\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"deny\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"provide_setup_info\"}}]"
+    ]
+  }
+}

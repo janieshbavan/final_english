@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+- story: full conversation path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: confirm_name
+    - action: utter_ask_feeling
+    - intent: tell_feeling
+    - action: utter_intro
+    - intent: agree_chat
+    - action: utter_explain_company
+    - action: utter_confirm_role
+    - intent: confirm_role
+    - action: utter_ask_industry
+    - intent: provide_industry
+    - action: utter_ask_issues
+    - intent: share_integration_issue
+    - action: utter_offer_session
+    - intent: agree_session
+    - action: utter_confirm_appointment
