@@ -1,0 +1,5 @@
+HOW TO RUN:
+
+step1. Training RASA model with required datas in .yml format in terminal
+step2. run RASA model using rasa run --enable-api --cors "*"
+step3. create another terminal and run appp.py file and start using the model
