@@ -1,0 +1,437 @@
+ENGLISH:
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+
+- intent: confirm_name
+  examples: |
+    - Yes, this is [John](name)
+    - Speaking
+    - Yep, [Sarah](name) here
+
+- intent: tell_feeling
+  examples: |
+    - I'm doing well
+    - Not bad, thanks
+    - All good today
+
+- intent: agree_chat
+  examples: |
+    - Sure
+    - Yeah, go ahead
+    - No problem
+
+- intent: confirm_role
+  examples: |
+    - Yes, I handle integration
+    - That's correct
+    - I'm in charge of integration
+
+- intent: provide_industry
+  examples: |
+    - We’re in [finance](industry)
+    - Logistics
+    - [Manufacturing](industry)
+
+- intent: share_integration_issue
+  examples: |
+    - We had scaling issues recently
+    - Version conflicts are annoying
+    - Integration is slow
+
+- intent: agree_session
+  examples: |
+    - Yes, let's do it
+    - Next Tuesday works
+    - Wednesday afternoon sounds good
+
+- intent: deny
+  examples: |
+    - Not interested
+    - No thanks
+    - Maybe later
+
+- intent: provide_setup_info
+  examples: |
+    - We're using custom REST APIs
+    - Boomi mostly
+    - It's built on Zapier
+
+TAMIL:
+
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - வணக்கம்
+      - ஹாய்
+      - ஹலோ
+      - ஹேய்
+      - வணக்கம் டா
+      - ஹேய் தேர்
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - பை பை
+      - சீ யூ
+      - டேக் கேர்
+      - டாடா
+      - போய்ட்டு வரேன்
+      - ஓகே பை
+
+  - intent: ask_product_info
+    examples: |
+      - உங்க product பற்றி சொல்லுங்க
+      - என்ன services குடுக்குறீங்க?
+      - what solutions do you offer?
+      - உங்க AI tools பற்றி சொல்லுங்க
+      - என்ன என்ன product இருக்கு?
+
+  - intent: ask_pricing
+    examples: |
+      - எவ்வளவு charge பண்றீங்க?
+      - pricing எப்படி இருக்கு?
+      - service cost என்ன?
+      - monthly rate என்ன?
+      - subscription எவ்வளவு?
+
+  - intent: book_meeting
+    examples: |
+      - ஒரு meeting book பண்ணனும்
+      - நா ஒரு call schedule பண்ணலாமா?
+      - meeting fix பண்ணலாமா?
+      - ஹரிவிகாஷ் கிட்ட call வேணும்
+      - strategy call பண்ணலாம்
+
+  - intent: provide_name
+    examples: |
+      - எனோட பேர் Rajesh
+      - ராஜேஷ்
+      - என் பேர் Meena
+      - Meena டா
+      - name Prakash
+
+  - intent: provide_email
+    examples: |
+      - என் mail raj@gmail.com
+      - raj@gmail.com
+      - அது meena@abc.com
+      - mail id prakash@xyz.com
+
+  - intent: provide_company
+    examples: |
+      - நா Zohoல வேலை பாக்குறேன்
+      - என் company Zoho
+      - நா Freshworksல இருந்து வரேன்
+      - company name Paytm
+
+  - intent: provide_jobrole
+    examples: |
+      - நா marketingல இருக்கேன்
+      - என் role சேல்ஸ்
+      - சேல்ஸ்
+      - operations பண்ணறேன்
+      - digital marketing analyst
+
+  - intent: provide_industry
+    examples: |
+      - real estateல வேலை பாக்குறேன்
+      - ed-tech industry
+      - ரியல் எஸ்டேட்
+      - healthcareல வேலை
+      - நாங்க retail industry
+
+  - intent: provide_availability
+    examples: |
+      - நாளைக்கு 3pm
+      - 5க்கு பிறகு எப்பவும் free
+      - Monday காலை
+      - Thursdayக்கு free
+
+  - intent: affirm
+    examples: |
+      - ஆமாம்
+      - சரி
+      - ஓகே ஓகே
+      - ஹான்
+      - சரி டா
+      - ok ok
+
+  - intent: deny
+    examples: |
+      - இல்ல
+      - வேணாம்
+      - இப்போ வேண்டாம்
+      - not needed
+
+  - intent: out_of_scope
+    examples: |
+      - நீங்க யார்?
+      - எனக்கு pizza வேணும்
+      - இதுக்கு சம்பந்தமே இல்லாதது
+      - இப்போ என்ன time?
+
+HINDI:
+
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Namaste
+    - Hello
+    - Haan bolo
+    - Kaise ho
+    - Haan ji
+
+
+- intent: say_goodbye_with_interest
+  examples: |
+    - Thik hai, aap bhej dijiye
+    - Aap mujhe WhatsApp kar dena
+    - Achha, main dekh leta hoon fir
+    - Brochure bhej dijiye
+    - Send kar dijiye main check karunga
+    - Mujhe WhatsApp pe bhej dena
+    - Theek hai, baad mein dekh lunga
+    - Pehle brochure bhej do
+    - Accha chalta hoon, aap bhejna
+    - Okay, details bhej dijiyega
+
+
+- intent: agree
+  examples: |
+    - Haan
+    - Bilkul
+    - Theek hai
+    - Sahi hai
+    - Chaliye
+
+- intent: deny
+  examples: |
+    - Nahi
+    - Abhi nahi
+    - Baad mein
+    - Zarurat nahi hai
+    - Mera interest nahi hai
+
+- intent: ask_calls
+  examples: |
+    - Roz kitne calls karte ho?
+    - Kitne log convert karte hain?
+    - Conversion kitna hota hai?
+
+- intent: ask_solution
+  examples: |
+    - Aapka solution kya hai?
+    - AI agent kaise kaam karta hai?
+    - Yeh kaise madad karega?
+
+- intent: ask_proof
+  examples: |
+    - Kya koi case study hai?
+    - Real example bataiye
+    - Kya yeh pehle kaam kar chuka hai?
+
+- intent: ask_how_it_works
+  examples: |
+    - Kaise kaam karta hai?
+    - Setup kya hai?
+    - Process kya hai?
+
+- intent: book_strategy_call
+  examples: |
+    - Haan call book kar do
+    - Mujhe strategy call chahiye
+    - Harivikashhh se baat karni hai
+    - Time block kar do
+
+- intent: ask_brochure
+  examples: |
+    - Mujhe brochure bhejo
+    - Koi video hai?
+    - WhatsApp pe bhejna
+- intent: ending
+  examples: |
+    - 
+    - Koi video hai?
+    - WhatsApp pe bhejna
+
+TELUGU:
+
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - Hai
+    - Hello
+    - Namaste
+    - Ela unnavu
+    - Hii
+    - Good morning
+
+- intent: affirm
+  examples: |
+    - Avunu
+    - Sare
+    - Ok
+    - Avunandi
+    - Of course
+    - Naku ishtam
+
+- intent: deny
+  examples: |
+    - Kadu
+    - Time ledu
+    - Ipudu busy ga unnanu
+    - Tarvata matladukundam
+    - No
+
+- intent: provide_agent_info
+  examples: |
+    - Maa team rojuki 100 calls chestundi
+    - 200 calls chestaru kaani conversion thakkuva
+    - Sales calls chesedi 50 mandi ki
+    - Conversions chala low ga unnayi
+    - Mana team ekkuva calls chestundi kaani result radu
+
+- intent: show_interest
+  examples: |
+    - Chala manchi idea anipistundi
+    - Interest undi
+    - Mee AI ela panichestundi cheppandi
+    - Naku telusukovali
+    - Schedule cheyandi
+
+- intent: provide_business_info
+  examples: |
+    - Maa business real estate
+    - Nenu e-commerce lo unnanu
+    - Freelance digital marketing chesthunnanu
+    - Edu tech company run chesthunnamu
+    - Local services business undi
+
+- intent: give_name
+  examples: |
+    - Na peru Ramesh
+    - I’m Sita
+    - This is Rajesh
+    - Nenu Srinivas
+
+- intent: give_email
+  examples: |
+    - Na email ramesh@example.com
+    - srinivas@gmail.com
+    - Mail id sita@abc.com
+
+- intent: give_date
+  examples: |
+    - Repati madhyanam saripotundi
+    - Thursday evening
+    - Monday morning
+    - E weeklo Friday baguntundi
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - Malli matladukundam
+    - Thanks
+    - Sare, kaluddam
+
+
+KANNADA:
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Namaskāra
+    - Hēgiddīra?
+    - Swāgatha
+    - Hello Nisha
+    - Hi
+    - Is this Mister Hair Clinic?
+    - Can I talk to someone about hair fall?
+
+- intent: affirm
+  examples: |
+    - Howdu
+    - Yes
+    - Correct
+    - Nīvu hēḷiddu sari
+    - Sure
+    - Definitely
+
+- intent: deny
+  examples: |
+    - Illa
+    - No
+    - Not now
+    - I’ll talk later
+    - Busy right now
+
+- intent: ask_pricing
+  examples: |
+    - Treatment yestu?
+    - Price hēge?
+    - PRP session yestu?
+    - Transplant cost hēge?
+    - GFC cost tilisi
+
+- intent: ask_treatment_options
+  examples: |
+    - Nānu ēnādaru māḍabahuda?
+    - Hair loss ge yāva treatment ide?
+    - QR 678 anta kēḷiddu, adu yenu?
+    - GFC treatment bagge tilisi
+
+- intent: book_appointment
+  examples: |
+    - Nānu appointment book māḍabekāgide
+    - Consult beku
+    - Online consultation māḍabahuda?
+    - Nānu Bangalore branch ge visit māḍalu ishta
+
+- intent: provide_name
+  examples: |
+    - Nanna hesaru Ravi
+    - Ravi
+    - My name is Suresh
+    - Call me Asha
+
+- intent: provide_phone
+  examples: |
+    - 9845098450
+    - My number is 9731470001
+    - 9900123456
+
+- intent: provide_email
+  examples: |
+    - ravi@gmail.com
+    - My email is asha.k@xyz.com
+    - you can mail me at hello@test.com
+
+- intent: ask_about_clinic
+  examples: |
+    - Clinic ellide?
+    - Mister Hair Clinic yāvaga start āyitu?
+    - Rating hēge?
+    - Exosomes treatment madtira?
+
+- intent: goodbye_followup
+  examples: |
+    - next call hegide?
+    - followup time yenu?
+    - nanna followup date enu?
+    - follow up schedule madbeku
+    - contact madbeku followupge
+    - followup samaya hege?
+    - ok bye
